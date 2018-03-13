@@ -13,7 +13,7 @@ class AdminController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:admin'); //U can find guards and providers in config->auth.php (L!g)
+        $this->middleware('auth:admin'); //You can find guards and providers in config->auth.php (L!g)
     }
 
     /**
