@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('contact', ['as' => 'contact', 'uses' => 'AboutController@create']);
+//Route::post('contact', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
     Route::prefix('admin')->group(function() {
         Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
