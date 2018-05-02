@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/crypto', 'Auth\ApiController@postUserCryptos');
+Route::post('/cryptos', 'Auth\ApiController@getUserCryptos');
+
+
+Route::post('/users', 'Auth\ApiController@getUsers');
