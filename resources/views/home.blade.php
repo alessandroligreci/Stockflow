@@ -1,23 +1,12 @@
 @extends('layouts.app')
-
+@extends('CryptoController.php')
 @section('content')
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+  @extends('layouts.navbar')
+  <script type="text/javascript">
+      document.write(result);
+  </script>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

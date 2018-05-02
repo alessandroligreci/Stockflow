@@ -14,7 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/wallet', function () {
+    return view('wallet');
+});
+Auth::routes('');
 
-Auth::routes();
+Route::get('/home', 'CryptoController@saveApiData');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/calendar', function () {
+    return view('calendar');
+});
