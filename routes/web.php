@@ -19,7 +19,9 @@ Route::get('/wallet', function () {
 });
 Auth::routes('');
 
-Route::get('/home', 'CryptoController@saveApiData');
+Route::get('/home', function () {
+  return view ('home');
+});
 
 Route::get('/calendar', function () {
     return view('calendar');
