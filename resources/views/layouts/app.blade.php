@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    @include('inc.navbar')
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,20 +22,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-  @parent
-  @include('inc.navbar')
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-lg-8">
-      @yield('content')
-    </div>
-    <div class="col-md-4 col-lg-4">
-      @include('inc.sidebar')
-    </div>
+  <div class="container">
+    @yield('content')
   </div>
-</div>
-
 </body>
 </html>

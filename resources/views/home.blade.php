@@ -1,14 +1,12 @@
-@include('layouts.navbar')
-<body>
-  <div class="container">
+@extends('layouts.app')
+@section('content')
+<div class="container">
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type='text/javascript'>
-
-  var btcPrice;
 
   function UpdateBtcPrice(){
     $.ajax({
@@ -44,13 +42,13 @@
         document.write(last_updated + "<br>");
       }
     },
-  error: function(err){
-    console.log(err);
-  }
-  });
+    error: function(err){
+      console.log(err);
+    }
+    });
   }
 
   UpdateBtcPrice();
   </script>
 </div>
-</body>
+@endsection

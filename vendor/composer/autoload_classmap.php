@@ -2833,6 +2833,7 @@ return array(
     'StockFlowSite\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'StockFlowSite\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'StockFlowSite\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'StockFlowSite\\Http\\Controllers\\CryptoController' => $baseDir . '/app/Http/Controllers/CryptoController.php',
     'StockFlowSite\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'StockFlowSite\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'StockFlowSite\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',

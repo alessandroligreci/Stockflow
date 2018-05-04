@@ -3178,6 +3178,7 @@ class ComposerStaticInitf90fda2d6d3be53bd2fa653f6a8d5cdc
         'StockFlowSite\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'StockFlowSite\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'StockFlowSite\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'StockFlowSite\\Http\\Controllers\\CryptoController' => __DIR__ . '/../..' . '/app/Http/Controllers/CryptoController.php',
         'StockFlowSite\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'StockFlowSite\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'StockFlowSite\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

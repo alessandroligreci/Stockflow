@@ -1,3 +1,4 @@
+<head>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="{{ url('/') }}">StockFlow</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +9,7 @@
         <ul class="navbar-nav mr-auto">
           <a class="nav-link" href="{{ url('/home') }}">Home <span class="sr-only">(current)</span></a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Valuta</a>
+            <a class="nav-link" href="#">Trends</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</a>
@@ -56,3 +57,7 @@
         </form>
       </div>
     </nav>
+</head>
+<body>
+
+</body>
