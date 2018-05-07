@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.coincalendar.info/wp-content/plugins/eventon-api/eventon.js?ver=1.0.1"></script>
   <script type="text/javascript">
@@ -14,5 +13,4 @@
      });
   </script>
   <div id="eventoncontent" style="height:100%; width:100%"></div>
-</div>
 @endsection
