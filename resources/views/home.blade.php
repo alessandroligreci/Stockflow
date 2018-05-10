@@ -12,18 +12,20 @@
       <th scope="col">Price Graph (24h)</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td id="name"></td>
-      <td id="market cap"></td>
-      <td id="volume (24h)"></td>
-      <td id="circulating supply"></td>
-      <td id="change (24h)"></td>
-      <td id="price graph (24h)"></td>
-    </tr>
+ <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td id="name"></td>
+          <td id="market cap"></td>
+          <td id="volume (24h)"></td>
+          <td id="circulating supply"></td>
+          <td id="change (24h)"></td>
+          <td id="price graph (24h)"></td>
+        </tr>
+    </tbody>
+  </table>
   <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
+  {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script> --}}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -35,10 +37,11 @@
     dataType: "json",
 
     success: function(result){
+        var name_ = [];
       for (var i = 0; i < result.length; i++) {
         // para = document.createElement("p").setAttribute("id", "nome('+i+')");
         name = result[i].name;
-        priceUsd = result[i].price_usd;
+        //priceUsd = priceUsd;
         rank = result[i].rank;
         priceBtc = result[i].pricebtc;
         //volume_usd = result[i].24h_volume_usd;
@@ -50,10 +53,15 @@
         percent_change_24h = result[i].percent_change_24h;
         percent_change_7d = result[i].percent_change_7d;
         last_updated = result[i].last_updated;
-        document.getElementById("name").innerHTML = (result[0].name);
+
+        name_.push(result[i].name);
+
+
+        document.getElementById("name").innerHTML = (name_);
         document.getElementById("market cap").innerHTML = (result[0].market_cap_usd + " $");
         document.getElementById("circulating supply").innerHTML = (result[0].available_supply);
-        document.getElementById("change (24h)").innerHTML = (result[0].percent_change_24h + " %¢");
+        document.getElementById("change (24h)").innerHTML = (result[0].percent_change_24h + " %");
+
         //document.getElementById("price graph (24h)").innerHTML = (result[0].market_cap_usd);
         //document.getElementById("volume (24h)").innerHTML = (result[0].24h_volume_usd;);
         // document.write(priceUsd + " ";

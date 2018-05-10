@@ -8,6 +8,8 @@ use StockFlowSite\Crypto;
 use StockFlowSite\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use \Overtrue\LaravelFollow\Traits\CanFollow;
+use \Overtrue\LaravelFollow\Traits\CanBeFollowed;
 
 class ApiController extends Controller
 {
@@ -66,5 +68,13 @@ class ApiController extends Controller
         } else {
             return response()->json(0);
         }
+    }
+
+    public function followUser(Request $request) {
+        $user = User::where('id', $request->input('user_id'))->first();
+        $user_to_follow = User::where('id', $request->input('follow_id'))->first();
+        $user->follow($user_to_follow);
+        //return $user_to_follow;
+        return response()->json($user);
     }
 }

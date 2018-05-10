@@ -26,3 +26,6 @@ Route::get('/home', function () {
 Route::get('/calendar', function () {
     return view('calendar');
 });
+Route::get('/profile', function () {
+    return view('profile');
+});

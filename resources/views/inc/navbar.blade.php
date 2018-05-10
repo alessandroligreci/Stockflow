@@ -7,9 +7,10 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <a class="nav-link" href="{{ url('/home') }}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ url('/home') }}">Home<span class="sr-only">(current)</span></a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Trends</a>
+            <a class="nav-link" href="{{ url('/profile') }}">Trends</a>
+            <a class="nav-link" href="{{ url('/profile') }}">Profile</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Languages</a>
@@ -58,6 +59,3 @@
       </div>
     </nav>
 </head>
-<body>
-
-</body>

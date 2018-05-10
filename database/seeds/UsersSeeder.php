@@ -11,6 +11,6 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        //factory(StockFlowSite\User::class, 100)->create();
+        factory(StockFlowSite\User::class, 100)->create();
     }
 }

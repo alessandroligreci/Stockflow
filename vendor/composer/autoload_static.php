@@ -71,6 +71,10 @@ class ComposerStaticInitf90fda2d6d3be53bd2fa653f6a8d5cdc
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
+        'O' => 
+        array (
+            'Overtrue\\LaravelFollow\\' => 23,
+        ),
         'N' => 
         array (
             'NunoMaduro\\Collision\\' => 21,
@@ -232,6 +236,10 @@ class ComposerStaticInitf90fda2d6d3be53bd2fa653f6a8d5cdc
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Overtrue\\LaravelFollow\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/laravel-follow/src',
         ),
         'NunoMaduro\\Collision\\' => 
         array (
@@ -2143,6 +2151,19 @@ class ComposerStaticInitf90fda2d6d3be53bd2fa653f6a8d5cdc
         'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
+        'Overtrue\\LaravelFollow\\Follow' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Follow.php',
+        'Overtrue\\LaravelFollow\\FollowRelation' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/FollowRelation.php',
+        'Overtrue\\LaravelFollow\\FollowServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/FollowServiceProvider.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanBeFavorited' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanBeFavorited.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanBeFollowed' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanBeFollowed.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanBeLiked' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanBeLiked.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanBeSubscribed' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanBeSubscribed.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanBeVoted' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanBeVoted.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanFavorite' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanFavorite.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanFollow' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanFollow.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanLike' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanLike.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanSubscribe' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanSubscribe.php',
+        'Overtrue\\LaravelFollow\\Traits\\CanVote' => __DIR__ . '/..' . '/overtrue/laravel-follow/src/Traits/CanVote.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',

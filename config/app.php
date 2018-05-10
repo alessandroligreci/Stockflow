@@ -159,9 +159,8 @@ return [
         // StockFlowSite\Providers\BroadcastServiceProvider::class,
         StockFlowSite\Providers\EventServiceProvider::class,
         StockFlowSite\Providers\RouteServiceProvider::class,
-
+        Overtrue\LaravelFollow\FollowServiceProvider::class,
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
