@@ -19,6 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/crypto', 'Auth\ApiController@postUserCryptos');
 Route::post('/cryptos', 'Auth\ApiController@getUserCryptos');
+
 Route::post('/follow', 'Auth\ApiController@followUser');
+
+Route::post('/wallet', 'Auth\ApiController@getWalletCryptos');
 
 Route::post('/users', 'Auth\ApiController@getUsers');
