@@ -4,7 +4,7 @@
     <head>
     <center>
         <div class="row">
-            <div >
+            <div>
                 <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
                 <h2>{{ Auth::user()->name }}</h2>
                 <p>{{ Auth::user()->email }}</p>

@@ -23,10 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $client = new client();
-        $response = $client->get('https://api.coinmarketcap.com/v1/ticker/');
-        $response = json_decode($response->getBody());
-
-        return View::make('home', compact('response'));
+        return view('home');
     }
 }

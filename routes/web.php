@@ -19,7 +19,9 @@ Route::get('/wallet', function () {
 });
 Auth::routes('');
 
-Route::resource('/home', 'HomeController');
+Route::get('/home', function () {
+  return view ('home');
+});
 
 Route::get('/calendar', function () {
     return view('calendar');
