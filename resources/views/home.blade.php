@@ -37,6 +37,7 @@
     dataType: "json",
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 success: function(result){
                     for (var i = 0; i < result.length; i++) {
                         var rank = result[i].rank;
@@ -68,6 +69,8 @@
     @endsection
 </div>
 =======
+=======
+>>>>>>> parent of 2458896... home diocane
     success: function(result){
         var name_ = [];
       for (var i = 0; i < result.length; i++) {
@@ -117,4 +120,7 @@
   UpdateBtcPrice();
   </script>
 @endsection
+<<<<<<< HEAD
+>>>>>>> parent of 2458896... home diocane
+=======
 >>>>>>> parent of 2458896... home diocane
