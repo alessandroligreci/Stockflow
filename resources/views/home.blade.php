@@ -32,14 +32,21 @@
 
                 success: function(result){
                     for (var i = 0; i < result.length; i++) {
-                        var newRow = '<tr><td>'+ result[i].rank + '</td>';
-                            newRow += '<td>'+ result[i].name + '</td>';
+                        var rank = result[i].rank;
+                        var newRow = '<tr><td>'+ rank + '</td>';
+                            newRow += '<td><a href="/detail">'+ result[i].name + '</a></td>';
                             newRow += '<td>'+ result[i].symbol + '</td>';
                             newRow += '<td>$'+ result[i].price_usd + '</td>';
                             newRow += '<td>$'+ result[i].market_cap_usd + '</td>';
                             newRow += '<td>$'+ result[i]["24h_volume_usd"] + '</td>';
                             newRow += '<td>'+ result[i].total_supply + '</td>';
-                            newRow += '<td>'+ result[i].percent_change_24h + '%</td>';
+                            if (result[i].percent_change_24h >= 0) {
+                                newRow += '<td>'+ result[i].percent_change_24h.fontcolor("green") + '%'.fontcolor("green") + '</td>';
+                                //change;
+                            }
+                            else {
+                                newRow += '<td>'+ result[i].percent_change_24h.fontcolor("red") + '%'.fontcolor("red") + '</td>';
+                            }
                             newRow += '</tr>';
                         $(".table").append(newRow);
                     }
